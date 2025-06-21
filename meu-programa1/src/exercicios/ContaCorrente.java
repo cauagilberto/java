@@ -27,4 +27,16 @@ public class ContaCorrente {
         System.out.println(nomeCliente + ", a transferência no valor de R$" +valorTransferido+ ", para a conta " +contaDestino+ ", foi efetuada com sucesso!\nVocê agora tem R$" +subtrair+ " na sua conta.");
 
     }
+    public void cancelamento(){
+        Scanner leitor4 = new Scanner(System.in);
+        System.out.println("Confirme o seu número de conta:");
+        int numbConta = leitor4.nextInt();
+        if (numbConta == numeroConta)
+            System.out.println("Confirme o seu número da sua agência:");
+            String numbAgencia = leitor4.next();
+            if (numbAgencia == numeroAgencia)
+                System.out.println("Dê uma justificativa para o cancelamento da sua conta:");
+                String justificativa = leitor4.next();
+        System.out.println("Conta cancela com sucesso, obrigado pela estadia conosco, " +nomeCliente);
+    }
 }
