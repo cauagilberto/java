@@ -1,5 +1,6 @@
 package exercicios;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class ContaCorrente {
     final int numeroConta = 123456789;

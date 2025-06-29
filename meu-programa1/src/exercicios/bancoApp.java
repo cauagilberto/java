@@ -15,7 +15,7 @@ public class bancoApp {
         }
         else if (Objects.equals(pergunta, "saldo"))
             System.out.println("O saldo da sua conta, " +conta.nomeCliente+ ", é de R$" +conta.saldoConta+ ".");
-        else if (Objects.equals(pergunta, "cancelar conta"))
+        else if (Objects.equals(pergunta, "cancelar"))
             conta.cancelamento();
     }
 }
