@@ -37,7 +37,7 @@ public class ContaCorrente {
             String numbAgencia = leitor4.next();
             if (numbAgencia == numeroAgencia)
                 System.out.println("Dê uma justificativa para o cancelamento da sua conta:");
-                String justificativa = leitor4.next();
+                String justificativa = leitor4.next(); //ve se da, adiciona String justificativa = leitor4.nextLong() ou leitor4.nextLine() !!!TESTAR!!!
         System.out.println("Conta cancela com sucesso, obrigado pela estadia conosco, " +nomeCliente);
     }
 }
