@@ -1,8 +1,26 @@
+import java.util.Scanner;
+
 public class Conta {
     String num;
     Pessoa titular;
     Double saldo,limite;
     Data criacao;
+
+    Conta(){
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Insira o número da sua conta: ");
+        this.num = s.nextLine();
+
+        System.out.print("Informe o seu nome: ");
+        this.titular = new Pessoa();
+
+        System.out.print("Insira o vlaor necessário de saldo na conta: ");
+        this.saldo = s.nextDouble();
+
+        System.out.print("Informe a data de hoje para criação da conta: ");
+        this.criacao = new Data();
+    }
 
     Conta (String num, Pessoa titular, Data c){
         this.num = num;

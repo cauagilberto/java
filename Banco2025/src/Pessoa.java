@@ -21,6 +21,8 @@ public class Pessoa {
 
         System.out.print("Digite a sua data de nascimento: ");
         this.dtNasc = new Data();
+        
+        s.close();
     }
 
     public Pessoa(String n, char s, String c, Data dtNasc) {

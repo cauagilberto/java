@@ -20,6 +20,8 @@ public class Data {
 
         System.out.print("Digite o ano: ");
         this.ano = d.nextInt();
+
+        d.close();
     }
 
     public void imprime() {
